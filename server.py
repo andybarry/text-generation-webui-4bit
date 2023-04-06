@@ -323,7 +323,7 @@ def create_interface():
                     shared.gradio['Clear history-confirm'] = gr.Button('Confirm', variant="stop", visible=False)
                     shared.gradio['Clear history-cancel'] = gr.Button('Cancel', visible=False)
 
-                shared.gradio["Chat mode"] = gr.Radio(choices=["cai-chat", "chat", "instruct"], value="cai-chat", label="Mode")
+                shared.gradio["Chat mode"] = gr.Radio(choices=["cai-chat", "chat", "instruct"], value="chat", label="Mode")
                 shared.gradio["Instruction templates"] = gr.Dropdown(choices=get_available_instruction_templates(), label="Instruction template", value="None", visible=False)
 
             with gr.Tab("Character", elem_id="chat-settings"):
