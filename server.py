@@ -1,3 +1,5 @@
+import custom_monkey_patch # apply monkey patch
+import gc
 import os
 
 os.environ['GRADIO_ANALYTICS_ENABLED'] = 'False'
